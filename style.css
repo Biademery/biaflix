@@ -66,13 +66,17 @@ body {
     display: flex;
     gap: 24px;
     justify-content: space-between;
+    width: 100%;
 }
 
 .image-card {
     width: 250px;
     height: 150px;
     border-radius: 5px;
-    /* margin-right: 20px; */
+}
+
+.image-card:hover {
+    transform: scale(1.1);
 }
 
 
