@@ -5,14 +5,14 @@ const allMovies = [
     name: 'Como perder um homem em 10 dias',
     imageURL: 'https://i.ytimg.com/vi/3IDeifYOCvM/maxresdefault.jpg',
     link: 'https://www.primevideo.com/region/na/dp/amzn1.dv.gti.a4ac5766-5720-adbb-a2e3-abaae36c7277/ref=atv_pr_sw_sc?autoplay=0',
-    genre: 'Comédia Romantica',
+    genre: 'Romantic Comedy',
     element: getElement('.romantic-comedy'),
   },
   {
     name: 'Amor com data marcada',
     imageURL: 'https://i.ytimg.com/vi/hPRCcjMU5J4/maxresdefault.jpg',
     link: 'https://www.netflix.com/title/81034553',
-    genre: 'Comédia Romantica',
+    genre: 'Romantic Comedy',
     element: getElement('.romantic-comedy'),
   },
   {
@@ -20,7 +20,7 @@ const allMovies = [
     imageURL:
       'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/FCCA599068457179DED2857E0D6056E24DE45AF62F05D88A9AE293C5E8468222',
     link: 'https://www.disneyplus.com/movies/10-things-i-hate-about-you/10OzquDiTIJB',
-    genre: 'Comédia Romantica',
+    genre: 'Romantic Comedy',
     element: getElement('.romantic-comedy'),
   },
   {
@@ -28,7 +28,7 @@ const allMovies = [
     imageURL:
       'https://play-lh.googleusercontent.com/wqSUib5v6VfdYSdhHItCT7M0Q6jtubYCFO59kFl8DEf8y7FsA_oqPLg39KtVRVCJi1ClLg=w600-h300-pc0xffffff-pd',
     link: 'https://www.starplus.com/movies/the-proposal/iuM9ZBVHqcY7',
-    genre: 'Comédia Romantica',
+    genre: 'Romantic Comedy',
     element: getElement('.romantic-comedy'),
   },
   {
@@ -36,7 +36,7 @@ const allMovies = [
     imageURL:
       'https://akamai.sscdn.co/uploadfile/letras/playlists/4/e/c/4/4ec416c969fe4421bbd96f7260808567.jpg',
     link: 'https://www.netflix.com/title/80203147',
-    genre: 'Comédia Romantica',
+    genre: 'Romantic Comedy',
     element: getElement('.romantic-comedy'),
   },
   {
@@ -158,6 +158,14 @@ const allMovies = [
     link: 'https://www.netflix.com/title/81277430',
     genre: 'Adventure',
     element: getElement('.adventure'),
+  },
+  {
+    name: 'O Casamento do Meu Melhor Amigo',
+    imageURL:
+      'http://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTaWrvAq82XVAEqL9mKmt1tMP8lFLJYIuRYPj3s-NUM4dd3gpBPvBUiEjF9ErgfERfKgdTR91XDMbEgTpqftJphOro_CEZAlqSM.webp',
+    link: 'https://www.netflix.com/title/1154359',
+    genre: 'Romantic Comedy',
+    element: getElement('.romantic-comedy'),
   },
 ];
 
