@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #EEEEEE; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #d45e5e; 
+}
+
+a {
+    text-decoration: none;
+    color: #424242;
+}
+
+body {
+    background-color: #E0E0E0;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.logo {
+    width: 80px;
+}
+
+.form-control {
+    background-color: #EEEEEE;
+}
+
+.btn {
+   border-color: #ff5757; 
+   background-color: transparent;
+   color: #424242;
+}
+
+.btn:hover,
+.dropdown-item:hover {
+    background-color: #ff5757;
+    border-color: #ff5757; 
+}
+
+.genres {
+    padding: 24px;
+}
+
+.cards h2 {
+    padding: 20px 0;
+}
+
+.genre {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.image-card {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    /* margin-right: 20px; */
+}
+
+
