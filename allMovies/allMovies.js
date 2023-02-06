@@ -167,6 +167,14 @@ const allMovies = [
     genre: 'Romantic Comedy',
     element: getElement('.romantic-comedy'),
   },
+  {
+    name: 'Friends',
+    imageURL:
+      'https://hbomax-images.warnermediacdn.com/images/GXdbR_gOXWJuAuwEAACVH/tileburnedin?size=1280x720&partner=hbomaxcom&v=6a409f09891f75549fdb8d07dc969b63&host=art-gallery.api.hbo.com',
+    link: 'https://play.hbomax.com/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH?source=googleHBOMAX&action=play',
+    genre: 'Comedy',
+    element: getElement('.comedy'),
+  },
 ];
 
 const all = getElement('.all');
