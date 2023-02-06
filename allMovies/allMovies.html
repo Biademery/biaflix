@@ -11,22 +11,22 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./allMovies.css" />
     <link rel="shortcut icon" href="./assets/logoB.png" />
 
-    <title>Biaflix</title>
+    <title>Biaflix - Todos</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/biaflix.png" class="logo" alt="Logo" />
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/biaflix.png" class="logo" alt="Logo" />
           </a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#movies">Filmes</a>
@@ -45,7 +45,6 @@
                   Categorias
                 </a>
                 <ul class="dropdown-menu">
-                  <!-- colocar os href dos links -->
                   <li><a class="dropdown-item" href="#action">Ação</a></li>
                   <li><a class="dropdown-item" href="#adventure">Aventura</a></li>
                   <li><a class="dropdown-item" href="#comedy">Comédia</a></li>
@@ -57,7 +56,7 @@
                   <li><a class="dropdown-item" href="#romance">Romance</a></li>
                   <li><a class="dropdown-item" href="#thriller">Suspense</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="./allMovies/allMovies.html">Todos</a></li>
+                  <li><a class="dropdown-item" href="./allMovies.html">Todos</a></li>
                 </ul>
               </li>
             </ul>
@@ -74,66 +73,10 @@
         </div>
       </nav>
     </header>
-    <section class="genres">
-      <div class="cards">
-        <h2>
-          <a href="">Comédia Romântica</a>
-        </h2>
-        <div class="romantic-comedy genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Ação</a>
-        </h2>
-        <div class="action genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Fantasia</a>
-        </h2>
-        <div class="fantasy genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Suspense</a>
-        </h2>
-        <div class="thriller genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Romance</a>
-        </h2>
-        <div class="romance genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Comédia</a>
-        </h2>
-        <div class="comedy genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Ficção Científica</a>
-        </h2>
-        <div class="sci-fi genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Aventura</a>
-        </h2>
-        <div class="adventure genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Musical</a>
-        </h2>
-        <div class="musical genre"></div>
-      </div>
-      <div class="cards">
-        <h2>
-          <a href="">Drama</a>
-        </h2>
-        <div class="drama genre"></div>
+    <section class="section">
+      <div>
+        <h2>Todos</h2>
+        <div class="all cards"></div>
       </div>
     </section>
 
@@ -142,6 +85,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script src="./allMovies.js"></script>
   </body>
 </html>
