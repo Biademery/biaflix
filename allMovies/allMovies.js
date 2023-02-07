@@ -441,13 +441,14 @@ const biaflix = [
 ];
 
 const all = getElement('.all');
+const sortedList = biaflix.sort((a, b) => a.name.localeCompare(b.name));
 
 const addMovie = ({ link, imageURL }) => {
   all.innerHTML += `
   <a href=${link} target="_blank"> <img src=${imageURL} class="image-card"></a>`;
 };
 
-biaflix.forEach(movie => addMovie(movie));
+sortedList.forEach(movie => addMovie(movie));
 
 const scrollFunction = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
