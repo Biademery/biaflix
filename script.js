@@ -1,4 +1,5 @@
 const getElement = name => document.querySelector(name);
+const mybutton = getElement('.myBtn');
 
 const biaflix = [
   {
@@ -397,3 +398,22 @@ const addMovie = ({ element, link, imageURL }) => {
 };
 
 biaflix.forEach(movie => addMovie(movie));
+
+const scrollFunction = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
+  }
+};
+
+window.onscroll = () => {
+  scrollFunction();
+};
+
+const topFunction = () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};
+
+mybutton.addEventListener('click', topFunction);
