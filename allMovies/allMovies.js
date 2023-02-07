@@ -3,6 +3,14 @@ const mybutton = getElement('.myBtn');
 
 const biaflix = [
   {
+    name: 'Herança',
+    imageURL:
+      'https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe7RKhLf7pApaQxfe65pJ8FvGIIdP-zpAHBeNBMaga0kfKG6wItNR7irJ5NvyB6kyNi81GkM_zq0vMTkg_b5omW6_oOb0R0GjrI.webp',
+    link: 'https://www.netflix.com/title/81252675',
+    genre: 'Thriller',
+    element: getElement('.thriller'),
+  },
+  {
     name: 'Como perder um homem em 10 dias',
     imageURL: 'https://i.ytimg.com/vi/3IDeifYOCvM/maxresdefault.jpg',
     link: 'https://www.primevideo.com/region/na/dp/amzn1.dv.gti.a4ac5766-5720-adbb-a2e3-abaae36c7277/ref=atv_pr_sw_sc?autoplay=0',
