@@ -1,6 +1,6 @@
 const getElement = name => document.querySelector(name);
 
-const allMovies = [
+const biaflix = [
   {
     name: 'Como perder um homem em 10 dias',
     imageURL: 'https://i.ytimg.com/vi/3IDeifYOCvM/maxresdefault.jpg',
@@ -396,4 +396,4 @@ const addMovie = ({ element, link, imageURL }) => {
   <a href=${link} target="_blank"> <img src=${imageURL} class="image-card"></a>`;
 };
 
-allMovies.forEach(movie => addMovie(movie));
+biaflix.forEach(movie => addMovie(movie));
