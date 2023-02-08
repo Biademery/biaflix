@@ -1,5 +1,8 @@
 const getElement = name => document.querySelector(name);
 const mybutton = getElement('.myBtn');
+const btn = getElement('.btn');
+// const cards = document.querySelectorAll('.cards');
+// convert node list to array
 
 const biaflix = [
   {
@@ -398,6 +401,22 @@ const addMovie = ({ element, link, imageURL }) => {
 };
 
 biaflix.forEach(movie => addMovie(movie));
+
+// const inputSearch = event => {
+//   event.preventDefault();
+//   let inputValue = getElement('.form-control').value;
+//   inputValue = inputValue.toLowerCase();
+
+//   biaflix.forEach(({ name }) => {
+//     if (!name.toLowerCase().includes(inputValue)) {
+//       cards.style.display = 'none';
+//     } else {
+//       cards.style.display = 'list-item';
+//     }
+//   });
+// };
+
+btn.addEventListener('click', inputSearch);
 
 const scrollFunction = () => {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

@@ -58,14 +58,24 @@ body {
     padding: 24px;
 }
 
+.hidden {
+    display: none;
+}
+
+.show {
+    display: list-item;
+    list-style: none;
+}
+
 .cards h2 {
     padding: 20px 0;
 }
 
 .genre {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
