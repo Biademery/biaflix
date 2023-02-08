@@ -61,13 +61,13 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: center;
 }
 
 .image-card {
-  width: 250px;
-  height: 150px;
+  width: 230px;
+  height: 130px;
   border-radius: 5px;
   transition: 0.7s ease-in-out;
 }
