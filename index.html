@@ -1,149 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./assets/logoB.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Biaflix</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/biaflix.png" class="logo" alt="Logo" />
-          </a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#movies">Filmes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#tv-shows">Séries</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link active dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Categorias
-                </a>
-                <ul class="dropdown-menu">
-                  <!-- colocar os href dos links -->
-                  <li><a class="dropdown-item" href="#action">Ação</a></li>
-                  <li><a class="dropdown-item" href="#adventure">Aventura</a></li>
-                  <li><a class="dropdown-item" href="#comedy">Comédia</a></li>
-                  <li><a class="dropdown-item" href="#romantic-comedy">Comédia romântica</a></li>
-                  <li><a class="dropdown-item" href="#drama">Drama</a></li>
-                  <li><a class="dropdown-item" href="#fantasy">Fantasia</a></li>
-                  <li><a class="dropdown-item" href="#sci-fi">Ficção Científica</a></li>
-                  <li><a class="dropdown-item" href="#musical">Musical</a></li>
-                  <li><a class="dropdown-item" href="#romance">Romance</a></li>
-                  <li><a class="dropdown-item" href="#thriller">Suspense</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="./allMovies/allMovies.html">Todos</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Títulos e gêneros"
-                aria-label="search"
-              />
-              <button class="btn btn-outline" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section class="genres">
-      <button class="myBtn" title="Go to top">Top</button>
+  <link rel="icon" href="./src/assets/logoB.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-      <div id="action" class="cards">
-        <h2>
-          <a class="title" href="">Ação</a>
-        </h2>
-        <div class="action genre"></div>
-      </div>
-      <div id="adventure" class="cards">
-        <h2>
-          <a class="title" href="">Aventura</a>
-        </h2>
-        <div class="adventure genre"></div>
-      </div>
-      <div id="comedy" class="cards">
-        <h2>
-          <a class="title" href="">Comédia</a>
-        </h2>
-        <div class="comedy genre"></div>
-      </div>
-      <div id="romantic-comedy" class="cards">
-        <h2>
-          <a class="title" href="">Comédia Romântica</a>
-        </h2>
-        <div class="romantic-comedy genre"></div>
-      </div>
-      <div id="drama" class="cards">
-        <h2>
-          <a class="title" href="">Drama</a>
-        </h2>
-        <div class="drama genre"></div>
-      </div>
-      <div id="fantasy" class="cards">
-        <h2>
-          <a class="title" href="">Fantasia</a>
-        </h2>
-        <div class="fantasy genre"></div>
-      </div>
-      <div id="sci-fi" class="cards">
-        <h2>
-          <a class="title" href="">Ficção Científica</a>
-        </h2>
-        <div class="sci-fi genre"></div>
-      </div>
-      <div id="musical" class="cards">
-        <h2>
-          <a class="title" href="">Musical</a>
-        </h2>
-        <div class="musical genre"></div>
-      </div>
-      <div id="romance" class="cards">
-        <h2>
-          <a class="title" href="">Romance</a>
-        </h2>
-        <div class="romance genre"></div>
-      </div>
-      <div id="thriller" class="cards">
-        <h2>
-          <a class="title" href="">Suspense</a>
-        </h2>
-        <div class="thriller genre"></div>
-      </div>
-    </section>
+  <title>Biafix</title>
+</head>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./script.js"></script>
-  </body>
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>

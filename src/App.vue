@@ -1,0 +1,125 @@
+<template>
+  <div>
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom">
+      <div class="container-fluid">
+        <router-link to="/">
+          <a class="navbar-brand">
+            <img src="./assets/biaflix.png" class="img" alt="Logo Biaflix" />
+          </a>
+        </router-link>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link to="/" class="nav-link">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/series" class="nav-link">Séries</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/filmes" class="nav-link">Filmes</router-link>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                style="color: #212121"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <!-- colocar os href dos links -->
+                <li><a class="dropdown-item" href="#action">Ação</a></li>
+                <li><a class="dropdown-item" href="#adventure">Aventura</a></li>
+                <li><a class="dropdown-item" href="#comedy">Comédia</a></li>
+                <li>
+                  <a class="dropdown-item" href="#romantic-comedy"
+                    >Comédia romântica</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#drama">Drama</a></li>
+                <li><a class="dropdown-item" href="#fantasy">Fantasia</a></li>
+                <li>
+                  <a class="dropdown-item" href="#sci-fi">Ficção Científica</a>
+                </li>
+                <li><a class="dropdown-item" href="#musical">Musical</a></li>
+                <li><a class="dropdown-item" href="#romance">Romance</a></li>
+                <li><a class="dropdown-item" href="#thriller">Suspense</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./allMovies/allMovies.html"
+                    >Todos</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2 bg-transparent"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+            />
+            <button
+              class="btn btn-outline-secondary"
+              style="color: #212121"
+              type="submit"
+            >
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <router-view />
+    </section>
+
+    <footer class="footer">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/biaflix.png" class="img" alt="Logo Biaflix" />
+        </a>
+      </div>
+      <div class="icons">
+        <img src="./assets/icons/github.svg" alt="Ícone do Github" />
+        <img src="./assets/icons/instagram.svg" alt="Ícone do Instagram" />
+        <img src="./assets/icons/linkedin.svg" alt="Ícone do LinkedIn" />
+      </div>
+      <div class="text">Copyright © 2023</div>
+    </footer>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "App",
+};
+</script>
+
+<style scoped>
+.navbar {
+  padding: 0 30px;
+}
+.img {
+  width: 100%;
+  max-width: 60px;
+}
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #6c757d;
+}
+.icons {
+  padding-bottom: 20px;
+}
+.icons img {
+  margin: 5px;
+}
+</style>
