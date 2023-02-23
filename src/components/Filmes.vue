@@ -1,8 +1,49 @@
-<template></template>
+<template>
+    <div class="body">
+        <h2>Filmes</h2>
+        <div class="cards">
+            <li v-for="(movie, index) in movies" :key="index">
+                <div v-if="movie.type == 'filme'">
+                    <a :href="movie.movieURL" target="_blank">
+                        <img class="image" :src="movie.imageURL" :alt="movie.name">
+                    </a>
+                </div>
+            </li>
+        </div>
+    </div>
+</template>
 
 <script>
-export default {};
-</script>
+import http from '../http-common.js';
 
-<style>
-</style>
+class MovieDataService {
+    getAll() {
+        return http.get('/movie/');
+    }
+}
+export default {
+    name: "Filmes",
+    data() {
+        return {
+            movies: [],
+        };
+    },
+    methods: {
+        addMovies() {
+            const movieDataService = new MovieDataService
+            movieDataService
+                .getAll()
+                .then((response) => {
+                    this.movies = response.data;
+                    console.log(response.data)
+                })
+                .catch((e) => {
+                    console.log(e);
+                });
+        },
+    },
+    mounted() {
+        this.addMovies();
+    },
+};
+</script>
