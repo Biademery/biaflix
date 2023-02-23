@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const http = axios.create({
-  baseURL: 'https://git.heroku.com/stark-eyrie-43196.git/',
+  baseURL: 'https://stark-eyrie-43196.herokuapp.com/',
   headers: {
     'Content-type': 'application/json',
   },
