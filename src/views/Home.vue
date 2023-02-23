@@ -128,7 +128,7 @@ import http from '../http-common.js';
 
 class MovieDataService {
   getAll() {
-    return http.get('/movie/');
+    return http.get('/api/movie/');
   }
 }
 export default {
