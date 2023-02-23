@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Action from '../components/Action.vue';
 import Adventure from '../components/Adventure.vue';
+import All from '../components/All.vue';
 import Comedy from '../components/Comedy.vue';
 import Drama from '../components/Drama.vue';
 import Fantasy from '../components/Fantasy.vue';
@@ -24,6 +25,11 @@ const routes = [
     path: '/action',
     name: 'Action',
     component: Action,
+  },
+  {
+    path: '/all',
+    name: 'All',
+    component: All,
   },
   {
     path: '/adventure',
