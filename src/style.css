@@ -20,3 +20,34 @@ body {
   color: #212121;
   background-color: #eee;
 }
+
+a {
+  text-decoration: none;
+  color: #212121;
+}
+
+li {
+  list-style-type: none;
+}
+
+.cards-home {
+  display: flex;
+  justify-content: baseline;
+  padding: 10px 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.body {
+  min-height: calc(100vh - 265px);
+}
+
+.image {
+  width: 220px;
+  height: 120px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 0;
+}

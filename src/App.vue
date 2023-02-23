@@ -19,57 +19,50 @@
               <router-link to="/filmes" class="nav-link">Filmes</router-link>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                style="color: #212121"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" role="button" style="color: #212121" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Categorias
               </a>
               <ul class="dropdown-menu">
-                <!-- colocar os href dos links -->
-                <li><a class="dropdown-item" href="#action">Ação</a></li>
-                <li><a class="dropdown-item" href="#adventure">Aventura</a></li>
-                <li><a class="dropdown-item" href="#comedy">Comédia</a></li>
                 <li>
-                  <a class="dropdown-item" href="#romantic-comedy"
-                    >Comédia romântica</a
-                  >
+                  <router-link to="/action" class="dropdown-item">Ação</router-link>
                 </li>
-                <li><a class="dropdown-item" href="#drama">Drama</a></li>
-                <li><a class="dropdown-item" href="#fantasy">Fantasia</a></li>
                 <li>
-                  <a class="dropdown-item" href="#sci-fi">Ficção Científica</a>
+                  <router-link to="/adventure" class="dropdown-item">Aventura</router-link>
                 </li>
-                <li><a class="dropdown-item" href="#musical">Musical</a></li>
-                <li><a class="dropdown-item" href="#romance">Romance</a></li>
-                <li><a class="dropdown-item" href="#thriller">Suspense</a></li>
+                <li>
+                  <router-link to="/comedy" class="dropdown-item">Comédia</router-link>
+                </li>
+                <li>
+                  <router-link to="/romantic-comedy" class="dropdown-item">Comédia Romântica</router-link>
+                </li>
+                <li>
+                  <router-link to="/drama" class="dropdown-item">Drama</router-link>
+                </li>
+                <li>
+                  <router-link to="/sci-fi" class="dropdown-item">Ficção Científica</router-link>
+                </li>
+                <li>
+                  <router-link to="/musical" class="dropdown-item">Musical</router-link>
+                </li>
+                <li>
+                  <router-link to="/romance" class="dropdown-item">Romance</router-link>
+                </li>
+                <li>
+                  <router-link to="/horror" class="dropdown-item">Terror</router-link>
+                </li>
                 <li>
                   <hr class="dropdown-divider" />
                 </li>
                 <li>
-                  <a class="dropdown-item" href="./allMovies/allMovies.html"
-                    >Todos</a
-                  >
+                  <router-link to="/all" class="dropdown-item">Todos</router-link>
                 </li>
               </ul>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input
-              class="form-control me-2 bg-transparent"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
-            <button
-              class="btn btn-outline-secondary"
-              style="color: #212121"
-              type="submit"
-            >
+            <input class="form-control me-2 bg-transparent" type="search" placeholder="Buscar" aria-label="Buscar" />
+            <button class="btn btn-outline-secondary" type="submit">
               Buscar
             </button>
           </form>
@@ -77,7 +70,7 @@
       </div>
     </nav>
 
-    <section>
+    <section class="section">
       <router-view />
     </section>
 
@@ -105,20 +98,32 @@ export default {
 
 <style scoped>
 .navbar {
-  padding: 0 30px;
+  padding: 10px 30px;
 }
+
+.nav-link {
+  color: #212121;
+}
+
 .img {
   width: 100%;
   max-width: 60px;
 }
+
+.section {
+  padding: 20px 40px;
+}
+
 .footer {
   text-align: center;
   padding: 30px;
   background-color: #6c757d;
 }
+
 .icons {
   padding-bottom: 20px;
 }
+
 .icons img {
   margin: 5px;
 }
