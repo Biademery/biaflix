@@ -1,0 +1,404 @@
+{
+    "movies": [
+        {
+            "id": 0,
+            "name": "Extraction 2",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfJ0vGv54hqSZOdy-M9wY9WNRaWAV3a_-AoZmeBGd0_2ZY3mDuJC4U27xkwq1ZpYBvzidgeikww3ax63ojQHDVbhdsI_Nhe1IMPmzH5MElJ_xw5cd6yjEUhWp39-bO5IkYkIqoqTCi12g57K3WA5rOAX8daIb6UKmUXD90POEZOlHc8cKlMQLzfiqHyAFNI.jpg",
+            "movieURL": "https://www.netflix.com/title/81098494",
+            "genre": "action",
+            "type": "movie"
+        },
+        {
+            "id": 1,
+            "name": "Through my Window",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR0sGOS57muFWrAdZzRIrZOFOTLZ2hqxVi7JqR4lBp5ScWxo8_etUt8BP0ABc8Zud26yPx5E4TNO5BBIdGHlDA0BC-ZB1yKuKP6IN7Yo0hcnmjfULSmnVUvaF0bDz6bBN5jQ.jpg",
+            "movieURL": "https://www.netflix.com/title/81388078",
+            "genre": "romance",
+            "type": "movie"
+        },
+        {
+            "id": 2,
+            "name": "P.S. I love you",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUkq4mmVhGQiMN0_P0962mafgb9BhYYAurAK1PV3uDSTODYPVov5vGUSAbErR8UnEk_FiCcmGGgtEiEGAv8JVp5OwfUhgrjx8vY.webp",
+            "movieURL": "https://www.netflix.com/title/70077546",
+            "genre": "romance",
+            "type": "movie"
+        },
+        {
+            "id": 3,
+            "name": "The Perfect Date",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaVsFL1YEb656b6CiWVN8I8DfR9R0NDXc3JWPUixLdZ6e2n-WkuTaKRb9-3Qp3PffNZw7eziNo1cNgTua5JB8Nge2ZCf4zM7N_njY_rmLJNKJEbJ_QgEDRN1HCcrCo7xmqck.jpg",
+            "movieURL": "https://www.netflix.com/title/81019888",
+            "genre": "romantic-comedy",
+            "type": "movie"
+        },
+        {
+            "id": 4,
+            "name": "Fifty Shades of Grey",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTt9efkyi3ZCYlRPgOjl25kxD1NuBRUz3BiI0gEiBnTKVE70V9FKiUyefmZuAJxegVvpgrx8z41xzAFynp5T5wsYH1hMYY2b7h0.webp",
+            "movieURL": "https://www.netflix.com/title/80013872",
+            "genre": "romance",
+            "type": "movie"
+        },
+        {
+            "id": 5,
+            "name": "The Mother",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdKlp86s3FqhJkIcDgb_EU7RY_3c2Uv5BAMioLybOl0B0qCDz-iMJIxudm2a9VnKTAi4_6UucY-vNBUtd_eVM6yGy0ntbMhAWG_z1UDq_qcYoUEbwngH9qazed8nM_DQ6Dbh.jpg",
+            "movieURL": "https://www.netflix.com/title/80210920",
+            "genre": "action",
+            "type": "movie"
+        },
+        {
+            "id": 6,
+            "name": "13 going on 30",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY2Ys3aHIec0JHdf_QvYepxFdEO_Ap1KbKHcIo8hVwIKQ_srPHzAA06q3ZQocQz6v6ldK3i1IAI12ueHnaEjpsB7ROj5qgv-Cv0.webp",
+            "movieURL": "https://www.netflix.com/title/60034573",
+            "genre": "romantic-comedy",
+            "type": "movie"
+        },
+        {
+            "id": 7,
+            "name": "The Nigth Agent",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVZlQsgm2_jfpMH8cmCrt8lVWFHjFF7T5PXvY3rh58OmFpjrQ_UFkuuOpC-WjPtHu6FfYbp7b6iqgXfa3BJ_ftI7m5IANuExse2N0jyF6oFd7rYBnhHuJWDxTaHEKbwjws97.jpg",
+            "movieURL": "https://www.netflix.com/title/81450827",
+            "genre": "action",
+            "type": "tv-show"
+        },
+        {
+            "id": 8,
+            "name": "Community",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf3yLwuusoTo2_ZckoCLpWGc7FO3nEJFaujNfZSYIvqDoh1dlxPB5OutZvlmoiOfkpqAAC_Xc60CuuPuabOHFp2SsG2xsSNQXGU.webp",
+            "movieURL": "https://www.netflix.com/title/70155589",
+            "genre": "comedy",
+            "type": "tv-show"
+        },
+        {
+            "id": 9,
+            "name": "Shooter",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUbp8NHcOoKrd0jSZheOr0xdzbcM54FgyXbD6WIwklG0dmS43nCmWuIqXg9cdjU66TDIDvxoBeDowQr8kb-ilX2Z5P8ChOfF2QY.webp",
+            "movieURL": "https://www.netflix.com/title/70056430",
+            "genre": "action",
+            "type": "movie"
+        },
+        {
+            "id": 10,
+            "name": "Spider-Man: Far From Home",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABROXAl1QysfTcVwSO1Da3b45xlsPJQ6RfNEnN0_oMktmcsFLDoJtnAVK2WNWVLKEWtJE9MsEdSLowphDMNQEwLs5mfDbvW4IWhk.webp",
+            "movieURL": "https://www.netflix.com/title/81055822",
+            "genre": "adventure",
+            "type": "movie"
+        },
+        {
+            "id": 11,
+            "name": "The Office",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZ7Aal1AgtjY9-Did5Ac2xoKreQk_f_-HQE3HR6_OOZPfJfQ7YN_emqQR6CkDmOl8PWJLklEP0ntVbv_XJYth0bWSVtvmq5LJ9E.webp",
+            "movieURL": "https://www.netflix.com/title/70105212",
+            "genre": "comedy",
+            "type": "tv-show"
+        },
+        {
+            "id": 12,
+            "name": "Bridgerton",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZhPLZ7D5mk4xRVHE4k1yZGc2JopzDPbw_j809HwHIfFYSypW9QvroEWCe2uXZZdl8drsA6UOScOvrPT59olWvAfsz5CoN7q7p_V89Qju02TzvTgInRMe6U4_mTUWDaEVC2q.jpg",
+            "movieURL": "https://www.netflix.com/title/80232920",
+            "genre": "romance",
+            "type": "tv-show"
+        },
+        {
+            "id": 13,
+            "name": "Heaven is for Real",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUVwYdAxr8wTNOgfdeU5SEXNV0YVua0EhTMlQKRXzqELYP3wS0P2pwx4pf0iykCDrJZF5y50T7Swl1KTV1RLiL82siapx29eo_4.webp",
+            "movieURL": "https://www.netflix.com/title/70295734",
+            "genre": "drama",
+            "type": "movie"
+        },
+        {
+            "id": 14,
+            "name": "Red Eye",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTe2p3RCXbQc0grwHTsAEJ_v3l6Tbl3XmexHVFUIbS8BNOJwTl99YDk6YZphCOOhozswc4mTcZKi3T4-AHlOL-66jbgJ57rxCEg.webp",
+            "movieURL": "https://www.netflix.com/title/70028900",
+            "genre": "horror",
+            "type": "movie"
+        },
+        {
+            "id": 15,
+            "name": "Maid in Manhattan",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQR4fZcIBxXg2ik1ZJnp90jYWmpbe0tp9YfszRXQkq2ZPpDl--qXIQQ8egYFcW8dY0L-y4mcEeFo48mZShQPlXt_niLGMEW5B64.webp",
+            "movieURL": "https://www.netflix.com/title/60024936",
+            "genre": "romance",
+            "type": "movie"
+        },
+        {
+            "id": 16,
+            "name": "You",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABToJtYj9mV22DzTl12r68LGZH97I24kkzYLlk9adKTlg8YvseeP-3dpt_85C3G-9WxkaECrfkHl2i3OITzgusxEe2sLIxU3BUCbl9VoqS7C78Sh-9S0S-pw-j6W0PZdZSlYu.jpg",
+            "movieURL": "https://www.netflix.com/title/81478066",
+            "genre": "horror",
+            "type": "tv-show"
+        },
+        {
+            "id": 17,
+            "name": "Shadow Hunters",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTVatK8q7AOcLCBbyjqrc1yRPqxNp90rpgTKKqG_YwAYvjvIgL1veYE8QNuwI4bXLi269Y8e2tiPefqomgZgeIQ9xT4EhGRPx05hwh34RKuGhdQsGzDFL0jKxZUO0QFXsOs3.jpg",
+            "movieURL": "https://www.netflix.com/title/80085440",
+            "genre": "fantasy",
+            "type": "tv-show"
+        },
+        {
+            "id": 18,
+            "name": "Lucifer",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcVz7eGUvU9mNnXnRJ9XrNdPtHKmjTim0tq5eaDCUg_hWayw_wHYaYkX0qohmJU0BJkoJnqrcQVmTwnoX3vXebycawqFGRw8UwFqagm4NRRUBnNq6S19t6XNJigs-jxm6Maf.jpg",
+            "movieURL": "https://www.netflix.com/title/81259963",
+            "genre": "fantasy",
+            "type": "tv-show"
+        },
+        {
+            "id": 19,
+            "name": "Emily in Paris",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWrZFAqDC4utGcaoiODMi97Ll7jHHGSxTa6-HMGb_AAhM73lsYXzY9hgT87b5QtQmBmma2HMxy9Y3TbzeaMMVV9X2YFfUEcV9P5nYPM3TC_0dOFctLCOq8n8lNxxIzmAEnN-.jpg",
+            "movieURL": "https://www.netflix.com/title/81289281",
+            "genre": "romantic-comedy",
+            "type": "movie"
+        },
+        {
+            "id": 20,
+            "name": "Black Mirror",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVelfrIqLBZeihfZfm9BYNGMIfZQ7pbkej5ck4MV9bqUet8kRKBm5tHON06G3_CDZIm3oEqVf-bZ3WiAIT39TmbBT7L_zLVpSq_I4IQj5AGNG1vrfyHxrrflkklc1-XJHsA4_MvkNG0SNuWyD24MzC2r2jIzON_VMUYtkQEhj-9CY5IgGBA9wBbrK6-tjt0.jpg",
+            "movieURL": "https://www.netflix.com/title/80131571",
+            "genre": "horror",
+            "type": "tv-show"
+        },
+        {
+            "id": 21,
+            "name": "Sherek 2",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe7KO-tJjCrYxBd8G93bpXSNfMFpRPBsKI4nYE4KVM_NXX3IFFcr3jxWYdzajuCsWhDnZRtQI9o7mjgpF4giH1SUY9jWvfr1yIc.webp",
+            "movieURL": "https://www.netflix.com/title/60034572",
+            "genre": "adventure",
+            "type": "movie"
+        },
+        {
+            "id": 22,
+            "name": "True Spirit",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSasof-pDVlTrlYLsNIPKhw-rIDj-5_dgyxcHg5fCerPwv16SO9Ks0Gl-zl9CkER0p4_bsyW_6ejfKPOuD0DyO0Yd1YwdG8R7JOdJkEGxmOkl0WczoyjsP4e_0YAKGTNT04P.jpg",
+            "movieURL": "https://www.netflix.com/title/81054619",
+            "genre": "adventure",
+            "type": "movie"
+        },
+        {
+            "id": 23,
+            "name": "The Christmas Chronicles 2",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdgzwINnPncPHhS0M8UAp7BQxCHCNHu9o6Wil9ayZzBmF1yVHWcqLzZUq8NjelsKi3M-fHBG1JxZI-rn4nVyhcHvBMSkYZ3qj7GCmRgGg-_QzRqiwsTr_duC0JA9XXDYT5RM.jpg",
+            "movieURL": "https://www.netflix.com/title/80988988",
+            "genre": "adventure",
+            "type": "movie"
+        },
+        {
+            "id": 24,
+            "name": "Never Have I Ever",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR2MJc31M_w8jnHigszXNpyWzAYx-e0PHvYLZlq3DHTf_lFsYpVy5Ee96vlUpqP1fmI04BwldAWChyjYo8Xl4s04l4MidCvkiuAq0i4QX6XgBrtIwudvu_iwYxvX-YzMy5zhdjwhjy6yzkw7P_6-f5dXF4Y3f-bXz2lyR3jd-1QJFEYRPYRUsjotO82BCCV7698vjN8oBR5vww0cLDbaRr4-GeIdHJgO6_hhNoQ3hHODFd2cgevTu8-9mFAJI7oh2sUTDAJmaCu-5bjp1ZuQHGkkK95iagFJzPXXRfGM-qEU8LjSrv0.jpg",
+            "movieURL": "https://www.netflix.com/title/81597262",
+            "genre": "romantic-comedy",
+            "type": "movie"
+        },
+        {
+            "id": 25,
+            "name": "Arrow",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdJcmzMl5oTmMR0GypwOe0JQEj3jOmsx-gWwU7A7IobXqyA0QFWgFDy1nopV0WA29FCllxRWwNRe0V5DuWuV2MoDw8TXu1KdSwA.webp",
+            "movieURL": "https://www.netflix.com/title/70276688",
+            "genre": "adventure",
+            "type": "tv-show"
+        },
+        {
+            "id": 26,
+            "name": "2012",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVYCweqWVicvqUsZue4i-U6BuC-xQNAgz39FbpHlOjVK1vCUr9kdaLLaAhDpTZ01ZomBL4kSbmUW-imMnjHEujA_6lT307UjMOE.webp",
+            "movieURL": "https://www.netflix.com/title/70108779",
+            "genre": "action",
+            "type": "movie"
+        },
+        {
+            "id": 27,
+            "name": "Brooklyn Nine-Nine",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfj-MZdGCLIOkB1OrtyaJLzx8N5xk2GjPL_aRfminOyHVNRhj4J56DznpVW0b-ouVzmMQzFYn8E-DtepEDbfe8JVYSveiY4RdnA.webp",
+            "movieURL": "https://www.netflix.com/title/81085947",
+            "genre": "comedy",
+            "type": "tv-show"
+        },
+        {
+            "id": 28,
+            "name": "Just Go With It",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTeF5GHfVMmPf8vlJY007-Z-SCBl08vMc2eWjDUnhote9t9DnsUVJGcihlh4PKp5Bn5Rp5-DMsob9VvKWNpUvGjr0IxjIRB9Eps.webp",
+            "movieURL": "https://www.netflix.com/title/70140922",
+            "genre": "comedy",
+            "type": "movie"
+        },
+        {
+            "id": 29,
+            "name": "Pretty Smart",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQADgKBWWwDboyDV_7x56hvvMNynz1ELgbnAJohZZ5wYskERJjxket5LvxvjWZBhNTbgrKgDYviJ4i6mqIC_Q088SvP5DWFA0kvYK6e6X6vAheVtWWhrAp6S2oaZcZreDX4Z.jpg",
+            "movieURL": "https://www.netflix.com/title/81423459",
+            "genre": "comedy",
+            "type": "tv-show"
+        },
+        {
+            "id": 30,
+            "name": "Set It Up",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXFNS_X1uxeJSIk3UxvNM9msYC9nATOPv88J0_KfwFwb-UbGVjQYJYlV3PJZuE8dGtJwE6pIWZL6ejW0yV6enHtSAbUihI-5xfYKGwtrCoqrHSG4F_UBHazuJavmG3Xz3PAD.jpg",
+            "movieURL": "https://www.netflix.com/title/80184100",
+            "genre": "romantic-comedy",
+            "type": "movie"
+        },
+        {
+            "id": 31,
+            "name": "Stranger Things",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQpnK-uuOe7H7X3RMJKcroyNCybbVqlpkQEBlMZSM0nhbfjXH5QtVXtsUJ1JaWAslHy83WBoWpKciuuoURdF9Ccug19-wV3w-Sghdp4FMz7pwnwewfUwIm5EfLzL9PqT-ApC.jpg",
+            "movieURL": "https://www.netflix.com/title/80077368",
+            "genre": "sci-fi",
+            "type": "tv-show"
+        },
+        {
+            "id": 32,
+            "name": "Awake",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX_3tIJAwwu_xstr0jRcNNNeKA0nzMH-zMdk-3lgq_JYep5smJt4NAOxNLKJautI9VMuPowcrCmpQ4SO-xnbWTKqa-N8j8pV7ge_ilIv061-2K5juM89cICSnmqJqxdvZ2Bg.jpg",
+            "movieURL": "https://www.netflix.com/title/81040362",
+            "genre": "sci-fi",
+            "type": "movie"
+        },
+        {
+            "id": 33,
+            "name": "AD Astra",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSKBj_2wA2E_aRrPd7pQ8QKeP5zRhHF62eLMcFbhjOts5qd07BfqYqeqea1c4DBYxT2_EeNXG23jVy_uKDevscUq3iN8xH46CxY.webp",
+            "movieURL": "https://www.netflix.com/title/81010971",
+            "genre": "sci-fi",
+            "type": "movie"
+        },
+        {
+            "id": 34,
+            "name": "Tau",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT8QZ_76TDtBXFT0KtPou4krDDRZPFLSsqo5jcNXOYZgzztR-AhlrsWdQsJGuKsA6xmXylY2vrw5gensqyfFpECwmtxd095vhSiYELmMtUFPugphiqFlLvhyCAMhq00AkUvT.jpg",
+            "movieURL": "https://www.netflix.com/title/80217569",
+            "genre": "sci-fi",
+            "type": "movie"
+        },
+        {
+            "id": 35,
+            "name": "Stowaway",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX4egHIlBMTeELLtlESWTZimItK1AQlFTvPzOufJa1ZxlRXhMlq-DcJzsN3orUCn4C-avIokIv9xBc2JxKiYBc0-DpN618CuPTkmhRpbz2CFJMe6P6KkSi26yPtz32LPdetj.jpg",
+            "movieURL": "https://www.netflix.com/title/81321986",
+            "genre": "sci-fi",
+            "type": "movie"
+        },
+        {
+            "id": 36,
+            "name": "The Witcher",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABT820zDM1PLaSTMHXHXKRDV8YFUVDXLctg0GyM8BVvJLeKcMdsIrI1d1mgz0h2F02Fi0Ecl_7IBGzGmn9qZUw96iAMo5Q3OvPpIj3pdhS6bAn3WOXd5qgzwMHMmZDiyQbepEB8vC0pZwRZ9K-nUWXY5rbiLJc0AVBHzucBweEPaOpVekYfLdVBGdJlwiclQnaR7BVqNj-3t4MAB0uY6gWHnEZAoLbMorPEo51dhq3pPFcVQeJiHnWGK1OrcfDuK1pnTnX-jtBdxtxwp5Kx-kvimLY1WTGj63wWGvYukw_33Bj7Pjyf4ryJcC_eMbhIGzJFK2nzAAH6E3UkXon0IS8D2-3AiRHB95gqiXgYVWv9MPKw.jpg",
+            "movieURL": "https://www.netflix.com/title/81246470",
+            "genre": "fantasy",
+            "type": "tv-show"
+        },
+        {
+            "id": 37,
+            "name": "Shadow and Bone",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABU09HjoOeyKX_VE8Wn4WJNQysCRdINJZAg4Zptj_7oZGXq0WBe2l2OssuuSkcs3icC4P77hZe30DNezBRcjcGecKsL8eUkSnUGzs_QCkGpgarmxHmY-OHGsq5jBUfHL31FIc.jpg",
+            "movieURL": "https://www.netflix.com/title/80236160",
+            "genre": "fantasy",
+            "type": "tv-show"
+        },
+        {
+            "id": 38,
+            "name": "Tick, tick... Boom!",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcKM4ZC09Xt6Gb5GCxnAgWZijLd1ogZwpI4XREa54j3HrGdeWSNnXQXd2Peta3Bd5qM6MVZmhdCrL4NpIAMcB6pw-Kgh2BR62agnLfuFA1YUdHHrtDalQSYAm-5TIilPV5rz.jpg",
+            "movieURL": "https://www.netflix.com/title/81149184",
+            "genre": "musical",
+            "type": "movie"
+        },
+        {
+            "id": 39,
+            "name": "Pitch Perfect",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcs2G8nXwPugr8fdlr5T-kF0BWjWmQFCqFyRm2i2XJCdrU2uY2i8y2I-E6VxleTOfHuyQ5RwKp2XtMXkgv5TJExJMUQqEnUXwpw.webp",
+            "movieURL": "https://www.netflix.com/title/70244166",
+            "genre": "musical",
+            "type": "movie"
+        },
+        {
+            "id": 40,
+            "name": "Fate: The Winx Saga",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXpcEmdCbKjpavovP6cgdruwl8N_5Ed7uB8VD-1i_XjD-anae2HmRT19Ei8hsukS-KYOtKiGHs7jq2gyYBgcPEgAJwtBFdCuDi_vpx9xtfUqCfGhLUfb5sLXlLli1x2I7VrG.jpg",
+            "movieURL": "https://www.netflix.com/title/80235274",
+            "genre": "fantasy",
+            "type": "tv-show"
+        },
+        {
+            "id": 41,
+            "name": "Guillermo Del Toro's: Gabinets Of Curiosities",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeoveIQhvnldb9927ddYq_qp2U-Vbyzc81h0LgV4H1t9VELtqmQHc9G6Fs1vt21A6cx2Z8gZ-DQREHemZki-i2PJllA4e7ba3Wq3WSDauvrPwjmu5yGeLARf455boshubg3a.jpg",
+            "movieURL": "https://www.netflix.com/title/81041070",
+            "genre": "horror",
+            "type": "tv-show"
+        },
+        {
+            "id": 42,
+            "name": "Run",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRY5mmhrrl4-n34g1Cvp2k3SK4NNxDCCHavCCpa2ZjoDs6nKqWyn4BScyHiIdlhdmMK_yqLGfbnmzMx-WOfEjoUNeC1VYlo3ROrfezDX6ML_PvtWt8InXXpFfuDme7BUgZAD.jpg",
+            "movieURL": "https://www.netflix.com/title/81157374",
+            "genre": "horror",
+            "type": "movie"
+        },
+        {
+            "id": 43,
+            "name": "Footlose",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRkbhCGCq0DI-6W8xjt02WGN-391NPwtLYx2pLFL1k7gIVCzRnu1MzT4HTno5WZn41ecA-4RtGUdf_iXDWcmxlauVftREbGJW5o.webp",
+            "movieURL": "https://www.netflix.com/title/70178624",
+            "genre": "musical",
+            "type": "movie"
+        },
+        {
+            "id": 44,
+            "name": "Diana: The Musical",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaMD6YGeLll8Evv1h3cRqqYjefG3oRzJDB93VnWld4gGZNl0OA3O449_8R_IrkHTOu8Rg8J00WBsuJ6-dLLWB8qVnfCkp6OP3jWTuUCr0XZDtUiSG0jthXltwHQzvZfQXUdr.jpg",
+            "movieURL": "https://www.netflix.com/title/81323667",
+            "genre": "musical",
+            "type": "movie"
+        },
+        {
+            "id": 45,
+            "name": "2Hearts",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSXlx4MvuOb-ovObqyG_Py1csNBLD_N4q_vB1mINscVQQyvoOGpuSBG1tv47urMM04qTRSPCXGA0H7GmAbzeq9x2GcC71VUVOmc.webp",
+            "movieURL": "https://www.netflix.com/title/81435805",
+            "genre": "musical",
+            "type": "movie"
+        },
+        {
+            "id": 46,
+            "name": "The Surrogacy",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS8w6A0Ll-U7mOUIPhLWFJv2SHl0VZbywhih5k_rTk00vPjvqF2uwFsu9TZQejAMDCk7-Pyv24fDArB9zQ2Ht9WinwHxZyR5iIMhJALgbtooK45Xb8PvyJzDcdOfwEvmllqKvbPB7ZYNegWq8EX7VXVZk96Xjgb6L54FQNiIQl12mebCdP6D6Ij102p_UoA.jpg",
+            "movieURL": "https://www.netflix.com/title/81509605",
+            "genre": "drama",
+            "type": "tv-show"
+        },
+        {
+            "id": 47,
+            "name": "Gilmore Girls",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb7t0vtiA90X6ASywBsH1teesB782tdZV1V3iDVJsS-OVNFoD4YpTk2NnjBnMksLXVPh9h4s5swlf3DDrbYCZ49JIfyjnl5cGhs.webp",
+            "movieURL": "https://www.netflix.com/title/80014130",
+            "genre": "drama",
+            "type": "tvshow"
+        },
+        {
+            "id": 48,
+            "name": "Fireproof",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaUkSY1QvucIh261excM1Ou7IfJPCx7b6Us4JQ9k1b3ptkRycIDvGL8mzqjPbupIfTgGn9mURMn8PAwKjV8oW14vgQeevpIzttM.webp",
+            "movieURL": "https://www.netflix.com/title/70106271",
+            "genre": "drama",
+            "type": "movie"
+        },
+        {
+            "id": 49,
+            "name": "Remember Me",
+            "imageURL": "https://occ-0-4492-3851.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRjo4GeShHA8xbGoX1qZF6SyedgEOGqXhNwZjcXstsvAccMi28Y4FWwEijdvXV4zpFue8Jgx3HJTh0e432eu67mxty9Vbl301OU.webp",
+            "movieURL": "https://www.netflix.com/title/70121711",
+            "genre": "drama",
+            "type": "movie"
+        }
+    ]
+}
