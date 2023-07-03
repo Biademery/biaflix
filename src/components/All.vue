@@ -13,38 +13,14 @@
     </div>
 </template>
   
-<script >
-import http from '../http-common.js';
-
-class MovieDataService {
-    getAll() {
-        return http.get('/movie/');
-    }
-}
+<script>
+import list from '../data/data.json'
 export default {
-    name: "All",
-    data() {
-        return {
-            movies: [],
-        };
-    },
-    methods: {
-        addMovies() {
-            const movieDataService = new MovieDataService
-            movieDataService
-                .getAll()
-                .then((response) => {
-                    this.movies = response.data;
-                    console.log(response.data)
-                })
-                .catch((e) => {
-                    console.log(e);
-                });
-        },
-    },
-    mounted() {
-        this.addMovies();
-    },
+  name: "All",
+  data() {
+    return {
+      movies: list.movies,
+    };
+  },
 };
 </script>
-  
