@@ -30,14 +30,10 @@ li {
   list-style-type: none;
 }
 
-.cards-home {
+.cards {
   display: flex;
   justify-content: baseline;
   padding: 10px 0;
-}
-
-.cards {
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -46,8 +42,15 @@ li {
 }
 
 .image {
-  width: 220px;
+  width: 210px;
   height: 120px;
   border-radius: 10px;
   margin: 10px 10px 10px 0;
+}
+
+.section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
 }

@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <router-link to="/">
           <a class="navbar-brand">
-            <img src="./assets/biaflix.png" class="img" alt="Logo Biaflix" />
+            <img src="./assets/images/biaflix.png" class="img" alt="Logo Biaflix" />
           </a>
         </router-link>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -38,6 +38,9 @@
                 </li>
                 <li>
                   <router-link to="/drama" class="dropdown-item">Drama</router-link>
+                </li>
+                <li>
+                  <router-link to="/fantasy" class="dropdown-item">Fantasia</router-link>
                 </li>
                 <li>
                   <router-link to="/sci-fi" class="dropdown-item">Ficção Científica</router-link>
@@ -77,7 +80,7 @@
     <footer class="footer">
       <div class="logo">
         <a href="#">
-          <img src="./assets/biaflix.png" class="img" alt="Logo Biaflix" />
+          <img src="./assets/images/biaflix.png" class="img" alt="Logo Biaflix" />
         </a>
       </div>
       <div class="icons">
@@ -91,9 +94,17 @@
 </template>
 
 <script>
+import list from './data/data.json'
 export default {
   name: "App",
+  data() {
+    return {
+      movies: list.movies,
+    };
+  },
 };
+
+
 </script>
 
 <style scoped>
@@ -108,10 +119,6 @@ export default {
 .img {
   width: 100%;
   max-width: 60px;
-}
-
-.section {
-  padding: 20px 40px;
 }
 
 .footer {

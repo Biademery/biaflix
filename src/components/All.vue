@@ -1,6 +1,6 @@
 <template>
     <div class="body">
-        <h2>Romance</h2>
+        <h2>Todos</h2>
         <div class="cards">
             <li v-for="(movie, index) in movies" :key="index">
                 <div>
