@@ -32,7 +32,6 @@ li {
 
 .cards {
   display: flex;
-  justify-content: baseline;
   padding: 10px 0;
   flex-wrap: wrap;
 }
@@ -42,15 +41,19 @@ li {
 }
 
 .image {
-  width: 210px;
-  height: 120px;
+  width: 200px;
+  height: 110px;
   border-radius: 10px;
   margin: 10px 10px 10px 0;
 }
 
+/* .image:hover {
+  width: 210px;
+  height: 115px;
+  opacity: 0.8;
+  transition: ease-in-out 0.2s;
+} */
+
 .section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px 40px;
 }
