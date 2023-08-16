@@ -25,32 +25,24 @@ Esse projeto foi construido usando as seguintes tecnologias:
 
 - [Vue 3](https://www.vuejs.org/)
 - [NPM](https://www.npmjs.com/)
+- [Vite](https://vitejs.dev/)
+- [Bootstrap](https://getbootstrap.com/)
 
 ## ▶️ Instalando
-
-### WEB
-
-É necessário ter o Git, Npm e Vue 3.
 
 1. Clone este repositório:
 
 ```sh
-git clone https://github.com/Biademery/pythagoras-theorem-api
+git clone https://github.com/Biademery/biaflix.git
 ```
 
-2. Entre na pasta web:
-
-```sh
-cd www
-```
-
-3. Instale o npm:
+2. Instale todas as dependências:
 
 ```sh
 npm install
 ```
 
-4. Rode o servidor:
+3. Rode o servidor dev:
 
 ```sh
 npm run dev
