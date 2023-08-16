@@ -13,6 +13,8 @@
   </a>
 </p>
 
+<img src="./src/assets/images/app.png">
+
 ## 💻 Projeto
 
 Aplicação de filmes.
