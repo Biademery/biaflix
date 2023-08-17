@@ -47,13 +47,17 @@ li {
   margin: 10px 10px 10px 0;
 }
 
-/* .image:hover {
-  width: 210px;
-  height: 115px;
+.image:hover {
   opacity: 0.8;
   transition: ease-in-out 0.2s;
-} */
+}
 
-.section{
-  padding: 20px 40px;
+.section {
+  padding: 0 5%;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

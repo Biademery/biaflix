@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="body">
     <h2>
       <router-link to="/action">Ação</router-link>
     </h2>
@@ -25,9 +25,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('comedy')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -35,9 +35,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('romantic-comedy')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -45,9 +45,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('drama')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -55,9 +55,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('fantasy')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -65,9 +65,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('sci-fi')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -75,9 +75,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('musical')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -85,9 +85,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('romance')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
     <h2>
@@ -95,9 +95,9 @@
     </h2>
     <div class="cards">
       <li v-for="(movie, index) in getMoviesByGenre('horror')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
-            <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+        <a :href="movie.movieURL" target="_blank">
+          <img class="image" :src="movie.imageURL" :alt="movie.name">
+        </a>
       </li>
     </div>
   </div>
