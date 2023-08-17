@@ -36,7 +36,7 @@ Esse projeto foi construido usando as seguintes tecnologias:
 git clone https://github.com/Biademery/biaflix.git
 ```
 
-2. Instale todas as dependências:
+2. Instale os pacotes:
 
 ```sh
 npm install
