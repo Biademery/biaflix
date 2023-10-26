@@ -53,11 +53,5 @@ li {
 }
 
 .section {
-  padding: 0 5%;
-}
-
-.body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  padding: 0 35px;
 }

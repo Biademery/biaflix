@@ -63,17 +63,25 @@
               </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2 bg-transparent" type="search" placeholder="Buscar" aria-label="Buscar" />
-            <button class="btn btn-outline-secondary" type="submit">
-              Buscar
-            </button>
+          <form class="d-flex" role="search" @submit.prevent="searchMovies">
+            <input class="form-control me-2 bg-transparent" type="search" placeholder="Buscar" aria-label="Buscar"
+              v-model="searchQuery" />
           </form>
         </div>
       </div>
     </nav>
 
     <section class="section">
+      <div v-if="searchResults.length > 0">
+        <h3>Resultados da Busca</h3>
+        <ul class="cards">
+          <li v-for="movie in searchResults" :key="movie.id">
+            <a :href="movie.movieURL" target="_blank">
+              <img class="image" :src="movie.imageURL" :alt="movie.name">
+            </a>
+          </li>
+        </ul>
+      </div>
       <router-view />
     </section>
 
@@ -100,8 +108,26 @@ export default {
   data() {
     return {
       movies: list.movies,
+      searchQuery: '',
+      searchResults: []
     };
   },
+  methods: {
+    searchMovies() {
+      if (this.searchQuery) {
+        this.searchResults = this.movies.filter(movie =>
+          movie.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+        );
+      } else {
+        this.searchResults = [];
+      }
+    }
+  },
+  watch: {
+    searchQuery() {
+      this.searchMovies();
+    }
+  }
 };
 
 
