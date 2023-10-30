@@ -151,6 +151,10 @@ export default {
   max-width: 60px;
 }
 
+.section {
+  min-height: calc(100vh - 225px);
+}
+
 .footer {
   text-align: center;
   padding: 30px;
