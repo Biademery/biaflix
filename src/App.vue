@@ -82,10 +82,14 @@
           </li>
         </ul>
       </div>
-      <router-view />
+      <h3 v-else-if="searchQuery && searchResults.length === 0">
+        "{{ searchQuery }}" não encontrado
+      </h3>
+      <router-view v-if="!searchQuery" />
+
     </section>
 
-    <footer class="footer">
+    <footer class=" footer">
       <div class="logo">
         <a href="#">
           <img src="./assets/images/biaflix.png" class="img" alt="Logo Biaflix" />
