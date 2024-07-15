@@ -19,8 +19,8 @@
               <router-link to="/filmes" class="nav-link">Filmes</router-link>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" style="color: #212121" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" style="color: #212121"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Categorias
               </a>
               <ul class="dropdown-menu">
@@ -71,9 +71,9 @@
       </div>
     </nav>
 
-    <section class="section">
-      <div v-if="searchResults.length > 0">
-        <h3>Resultados da Busca</h3>
+    <section class="body">
+      <div v-if="searchResults.length > 0" class="container">
+        <h2>Resultados da Busca</h2>
         <ul class="cards">
           <li v-for="movie in searchResults" :key="movie.id">
             <a :href="movie.movieURL" target="_blank">
@@ -81,10 +81,38 @@
             </a>
           </li>
         </ul>
+        <div class="body">
+          <section class="container">
+            <h2>Outras opções</h2>
+            <div class="cards">
+              <li v-for="(movie, index) in movies" :key="index">
+                <div>
+                  <a :href="movie.movieURL" target="_blank">
+                    <img class="image" :src="movie.imageURL" :alt="movie.name">
+                  </a>
+                </div>
+              </li>
+            </div>
+          </section>
+        </div>
       </div>
-      <h3 v-else-if="searchQuery && searchResults.length === 0">
-        "{{ searchQuery }}" não encontrado
-      </h3>
+      <div v-else-if="searchQuery && searchResults.length === 0">
+        <h3>"{{ searchQuery }}" não encontrado</h3>
+        <div class="body">
+          <section class="container">
+            <h2>Outras opções</h2>
+            <div class="cards">
+              <li v-for="(movie, index) in movies" :key="index">
+                <div>
+                  <a :href="movie.movieURL" target="_blank">
+                    <img class="image" :src="movie.imageURL" :alt="movie.name">
+                  </a>
+                </div>
+              </li>
+            </div>
+          </section>
+        </div>
+      </div>
       <router-view v-if="!searchQuery" />
 
     </section>
