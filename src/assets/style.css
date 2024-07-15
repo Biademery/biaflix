@@ -13,7 +13,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d45e5e;
+  background: #d45e5ede;
+  border-radius: 5px;
 }
 
 body {
@@ -30,6 +31,11 @@ li {
   list-style-type: none;
 }
 
+h2 {
+  text-align: left;
+  align-self: flex-start;
+}
+
 .cards {
   display: flex;
   padding: 10px 0;
@@ -37,7 +43,14 @@ li {
 }
 
 .body {
-  min-height: calc(100vh - 265px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title {
+  text-align: start;
 }
 
 .image {
@@ -50,8 +63,4 @@ li {
 .image:hover {
   opacity: 0.8;
   transition: ease-in-out 0.2s;
-}
-
-.section {
-  padding: 0 35px;
 }

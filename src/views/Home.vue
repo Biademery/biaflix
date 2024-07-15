@@ -1,105 +1,125 @@
 <template>
   <div class="body">
-    <h2>
-      <router-link to="/action">Ação</router-link>
-    </h2>
-    <div class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('action')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </div>
-    <h2>
-      <router-link to="/adventure">Aventura</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('adventure')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="/comedy">Comédia</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('comedy')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="romantic-comedy">Comédia Romântica</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('romantic-comedy')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="/drama">Drama</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('drama')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="/fantasy">Fantasia</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('fantasy')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="/sci-fi">Ficção Científica</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('sci-fi')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="/musical">Musical</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('musical')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="/romance">Romance</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('romance')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
-    <h2>
-      <router-link to="horror">Terror</router-link>
-    </h2>
-    <ul class="cards">
-      <li v-for="(movie, index) in getMoviesByGenre('horror')" :key="index">
-        <a :href="movie.movieURL" target="_blank">
-          <img class="image" :src="movie.imageURL" :alt="movie.name">
-        </a>
-      </li>
-    </ul>
+    <section class="container">
+      <h2 class="title">
+        <router-link to="/action">Ação</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('action')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/adventure">Aventura</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('adventure')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/comedy">Comédia</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('comedy')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="romantic-comedy">Comédia Romântica</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('romantic-comedy')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/drama">Drama</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('drama')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/fantasy">Fantasia</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('fantasy')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/sci-fi">Ficção Científica</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('sci-fi')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/musical">Musical</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('musical')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="/romance">Romance</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('romance')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="container">
+      <h2>
+        <router-link to="horror">Terror</router-link>
+      </h2>
+      <ul class="cards">
+        <li v-for="(movie, index) in getMoviesByGenre('horror')" :key="index">
+          <a :href="movie.movieURL" target="_blank">
+            <img class="image" :src="movie.imageURL" :alt="movie.name">
+          </a>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -138,12 +158,6 @@ export default {
         case 'large':
           numberOfMoviesToShow = 6;
           break;
-        case 'extra large':
-          numberOfMoviesToShow = 7;
-          break;
-        case 'extra extra large':
-          numberOfMoviesToShow = 8;
-          break;
         default:
           numberOfMoviesToShow = 6;
           break;
@@ -152,22 +166,18 @@ export default {
       return filteredByGenre.slice(0, numberOfMoviesToShow);
     },
     updateScreenSize() {
-      if (window.innerWidth < 448) {
+      if (window.innerWidth < 514) {
         this.screenSize = 'mobile';
-      } else if (window.innerWidth >= 448 && window.innerWidth < 672) {
+      } else if (window.innerWidth >= 514 && window.innerWidth <= 767) {
         this.screenSize = 'extra extra small';
-      } else if (window.innerWidth >= 672 && window.innerWidth < 894) {
+      } else if (window.innerWidth > 767 && window.innerWidth <= 992) {
         this.screenSize = 'extra small';
-      } else if (window.innerWidth >= 894 && window.innerWidth < 1117) {
+      } else if (window.innerWidth > 992 && window.innerWidth <= 1199) {
         this.screenSize = 'small';
-      } else if (window.innerWidth >= 1117 && window.innerWidth < 1341) {
+      } else if (window.innerWidth > 1199 && window.innerWidth <= 1399) {
         this.screenSize = 'medium';
-      } else if (window.innerWidth >= 1341 && window.innerWidth < 1564) {
+      } else if (window.innerWidth > 1399) {
         this.screenSize = 'large';
-      } else if (window.innerWidth >= 1564 && window.innerWidth < 1787) {
-        this.screenSize = 'extra large';
-      } else {
-        this.screenSize = 'extra extra large';
       }
     }
   },

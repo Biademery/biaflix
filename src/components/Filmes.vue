@@ -1,16 +1,18 @@
 <template>
-    <div class="body">
-        <h2>Filmes</h2>
-        <div class="cards">
-            <li v-for="(movie, index) in movies" :key="index">
-                <div v-if="movie.type == 'movie'">
-                    <a :href="movie.movieURL" target="_blank">
-                        <img class="image" :src="movie.imageURL" :alt="movie.name">
-                    </a>
-                </div>
-            </li>
-        </div>
-    </div>
+  <div class="body">
+    <section class="container">
+      <h2>Filmes</h2>
+      <div class="cards">
+        <li v-for="(movie, index) in movies" :key="index">
+          <div v-if="movie.type == 'movie'">
+            <a :href="movie.movieURL" target="_blank">
+              <img class="image" :src="movie.imageURL" :alt="movie.name">
+            </a>
+          </div>
+        </li>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

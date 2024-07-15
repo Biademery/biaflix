@@ -1,18 +1,20 @@
 <template>
-    <div class="body">
-        <h2>Todos</h2>
-        <div class="cards">
-            <li v-for="(movie, index) in movies" :key="index">
-                <div>
-                    <a :href="movie.movieURL" target="_blank">
-                        <img class="image" :src="movie.imageURL" :alt="movie.name">
-                    </a>
-                </div>
-            </li>
-        </div>
-    </div>
+  <div class="body">
+    <section class="container">
+      <h2>Todos Filmes</h2>
+      <div class="cards">
+        <li v-for="(movie, index) in movies" :key="index">
+          <div>
+            <a :href="movie.movieURL" target="_blank">
+              <img class="image" :src="movie.imageURL" :alt="movie.name">
+            </a>
+          </div>
+        </li>
+      </div>
+    </section>
+  </div>
 </template>
-  
+
 <script>
 import list from '../data/data.json'
 export default {
