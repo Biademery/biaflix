@@ -128,7 +128,7 @@
         <img src="./assets/icons/instagram.svg" alt="Ícone do Instagram" />
         <img src="./assets/icons/linkedin.svg" alt="Ícone do LinkedIn" />
       </div>
-      <div class="text">Copyright © 2023</div>
+      <div class="text">Copyright © 2024</div>
     </footer>
   </div>
 </template>
@@ -177,16 +177,15 @@ export default {
 .img {
   width: 100%;
   max-width: 60px;
-}
-
-.section {
-  min-height: calc(100vh - 225px);
+  margin-bottom: 25px;
 }
 
 .footer {
   text-align: center;
   padding: 30px;
-  background-color: #6c757d;
+  background-color: #6c757dd8;
+  box-shadow: 0 -10px 20px rgba(108, 117, 125, 0.847);
+  position: relative;
 }
 
 .icons {
