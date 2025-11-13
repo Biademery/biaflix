@@ -1,14 +1,21 @@
 <template>
   <div class="body">
+    <div v-if="loading" class="loading-container">
+      <p>Carregando filmes...</p>
+    </div>
+    <div v-else-if="error" class="error-container">
+      <p>{{ error }}</p>
+    </div>
+    <div v-else>
     <section class="container">
       <h2 class="title">
         <router-link to="/action">Ação</router-link>
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('action')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -18,9 +25,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('adventure')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -30,9 +37,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('comedy')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -42,9 +49,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('romantic-comedy')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -54,9 +61,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('drama')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -66,9 +73,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('fantasy')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -78,9 +85,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('sci-fi')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -90,9 +97,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('musical')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -102,9 +109,9 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('romance')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
@@ -114,56 +121,49 @@
       </h2>
       <ul class="cards">
         <li v-for="(movie, index) in getMoviesByGenre('horror')" :key="index">
-          <a :href="movie.movieURL" target="_blank">
+          <router-link :to="`/movie/${movie.id}`">
             <img class="image" :src="movie.imageURL" :alt="movie.name">
-          </a>
+          </router-link>
         </li>
       </ul>
     </section>
+    </div>
   </div>
 </template>
 
 <script>
-import list from '../data/data.json';
+import movieService from '../services/movie.service';
 
 export default {
   name: "Home",
   data() {
     return {
-      movies: list.movies,
+      movies: [],
       screenSize: 'large',
+      loading: true,
+      error: null,
     };
+  },
+  async created() {
+    this.updateScreenSize();
+    window.addEventListener('resize', this.updateScreenSize);
+    
+    // Carregar filmes do OMDB
+    try {
+      this.movies = await movieService.loadAllMovies();
+      this.loading = false;
+    } catch (error) {
+      this.error = 'Erro ao carregar filmes. Por favor, tente novamente.';
+      this.loading = false;
+      console.error(error);
+    }
   },
   methods: {
     getMoviesByGenre(genre) {
       const filteredByGenre = this.movies.filter(movie => movie.genre.toLowerCase() === genre.toLowerCase());
-
-      let numberOfMoviesToShow;
-      switch (this.screenSize) {
-        case 'mobile':
-          numberOfMoviesToShow = 1;
-          break;
-        case 'extra extra small':
-          numberOfMoviesToShow = 2;
-          break;
-        case 'extra small':
-          numberOfMoviesToShow = 3;
-          break;
-        case 'small':
-          numberOfMoviesToShow = 4;
-          break;
-        case 'medium':
-          numberOfMoviesToShow = 5;
-          break;
-        case 'large':
-          numberOfMoviesToShow = 6;
-          break;
-        default:
-          numberOfMoviesToShow = 6;
-          break;
-      }
-
-      return filteredByGenre.slice(0, numberOfMoviesToShow);
+      
+      // Sempre mostrar 15 filmes na home
+      return filteredByGenre.slice(0, 15);
     },
     updateScreenSize() {
       if (window.innerWidth < 514) {
@@ -180,10 +180,6 @@ export default {
         this.screenSize = 'large';
       }
     }
-  },
-  created() {
-    this.updateScreenSize();
-    window.addEventListener('resize', this.updateScreenSize);
   },
   destroyed() {
     window.removeEventListener('resize', this.updateScreenSize);

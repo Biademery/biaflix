@@ -1,13 +1,19 @@
 <template>
   <div class="body">
-    <section class="container">
+    <div v-if="loading" class="loading-container">
+      <p>Carregando filmes...</p>
+    </div>
+    <div v-else-if="error" class="error-container">
+      <p>{{ error }}</p>
+    </div>
+    <section v-else class="container">
       <h2>Comédia Romântica</h2>
       <div class="cards">
         <li v-for="(movie, index) in movies" :key="index">
           <div v-if="movie.genre == 'romantic-comedy'">
-            <a :href="movie.movieURL" target="_blank">
+            <router-link :to="`/movie/${movie.id}`">
               <img class="image" :src="movie.imageURL" :alt="movie.name">
-            </a>
+            </router-link>
           </div>
         </li>
       </div>
@@ -16,13 +22,27 @@
 </template>
 
 <script>
-import list from '../data/data.json'
+import movieService from '../services/movie.service';
+
 export default {
   name: "RomanticComedy",
   data() {
     return {
-      movies: list.movies,
+      movies: [],
+      loading: true,
+      error: null,
     };
+  },
+  async created() {
+    try {
+      const allMovies = await movieService.loadAllMovies();
+      this.movies = allMovies.filter(movie => movie.genre === 'romantic-comedy');
+      this.loading = false;
+    } catch (error) {
+      this.error = 'Erro ao carregar filmes. Por favor, tente novamente.';
+      this.loading = false;
+      console.error(error);
+    }
   },
 };
 </script>

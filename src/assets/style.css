@@ -57,16 +57,18 @@ section .body {
 }
 
 .image {
-  width: 200px;
-  height: 110px;
+  width: 210px;
+  height: 310px;
   border-radius: 10px;
   margin: 10px 10px 10px 0;
+  object-fit: cover;
 }
 
 .image:hover {
   opacity: 0.8;
   transition: ease-in-out 0.2s;
 }
+
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,

@@ -14,6 +14,7 @@ import RomanticComedy from '../components/RomanticComedy.vue';
 import SciFi from '../components/Sci-Fi.vue';
 import Series from '../components/Series.vue';
 import Home from '../views/Home.vue';
+import MovieDetails from '../views/MovieDetails.vue';
 
 const routes = [
   {
@@ -85,6 +86,11 @@ const routes = [
     path: '/series',
     name: 'Series',
     component: Series,
+  },
+  {
+    path: '/movie/:id',
+    name: 'MovieDetails',
+    component: MovieDetails,
   },
 ];
 
